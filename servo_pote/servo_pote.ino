@@ -20,8 +20,5 @@ void setup() {
 }
 
 void loop() {
-  valorPote = analogRead(A0);
-  int grados = map(valorPote, 0, 1023, 0, 360);
-  int pulso = map(grados, 0, 360, 80, 490);
-  pwm.setPWM(0, 0, pulso);
+  pwm.setPWM(0, 0, 100);
 }
